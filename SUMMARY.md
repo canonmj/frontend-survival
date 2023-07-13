@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Welcome to A Product](README.md)
+* [👋 Gitbook 가이드](README.md)
 
 ## Overview
 
@@ -22,3 +22,7 @@
 
 * [🎨 For Designers](use-cases/for-designers.md)
 * [🖥 For Developers](use-cases/for-developers.md)
+
+***
+
+* [1주차](1.md)
