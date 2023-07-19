@@ -6,11 +6,11 @@
 
 ## 개발환경 세팅 잘하는법?
 
-- 프론트엔드 변화가 빠르니 다음 과정을 시간날때마다 자주 반복해보면 좋다함! 그럼 고고~
+프론트엔드 변화가 빠르니 다음 과정을 시간날때마다 자주 반복해보면 좋다함! 그럼 고고~
 
 ### NPM
 
-- npm 패키지 준비하는것 부터 시작해볼까요?
+npm 패키지 준비하는것 부터 시작해볼까요?
 
 ```jsx
 npm init (기본 명령어)
@@ -18,7 +18,7 @@ npm init -y (yes)
 // package.json 생성됨 ✔️
 ```
 
-- .gitignore 파일을 만들어줍니다.
+.gitignore 파일을 만들어줍니다.
 
 ```jsx
 node_modules, dist, .parcel-cache 파일 필수로 넣어줍니다.
@@ -26,8 +26,6 @@ node_modules, dist, .parcel-cache 파일 필수로 넣어줍니다.
 ```
 
 ### TypeScript
-
-- 타입스크립트도 설정해줍니다.
 
 ```jsx
 npm i -D typescript // 개발에 필요한 도구. devDependencies에 추가하여 관리함.
@@ -38,15 +36,13 @@ npx tsc —init // 이런 도구로 사용되는것들은(-D로 설치한것들)
 
 ### ESLint
 
-- ESLint도 설정해줍니다.
-
 ```jsx
 npm i -D eslint
 npx eslint --init // Javascript modules (import/export) 방식 선택
 // .eslintrc.js 생성됨 ✔️
 ```
 
-- .eslintignore 파일을 만들어줍니다.
+.eslintignore 파일을 만들어줍니다.
 
 ```jsx
 node_modules, dist, .parcel-cache 파일을 넣어줍니다.
@@ -66,12 +62,12 @@ npm i -D @types/react @types/react-dom // 요즘은 내장으로 다 들어있�
 npm i -D jest @types/jest @swc/core @swc/jest \
     jest-environment-jsdom \
     @testing-library/react @testing-library/jest-dom
-// 복잡해 보이네.. 맥락은 jest랑 swc 같이 쓰는것임!
 
+// 복잡해 보이지만.. 맥락은 jest랑 swc 같이 쓰는것임!
 ```
 
-- jest.config.js 파일을 작성해서 SWC를 사용합니다.
-  [참고](https://github.com/ahastudio/CodingLife/blob/main/20220726/react/jest.config.js)
+jest.config.js 파일을 작성해서 SWC를 사용합니다.
+[참고](https://github.com/ahastudio/CodingLife/blob/main/20220726/react/jest.config.js)
 
 ### Parcel 설치
 
@@ -80,7 +76,7 @@ npm i -D parcel
 // parcel을 통해 웹서버, 데브서버를 띄움
 ```
 
-- package.json 파일 설정
+package.json 파일 설정
 
 명령모음(scripts 안 내용) 여기서 갖고 올 수 있다.
 [참고](https://github.com/ahastudio/CodingLife/blob/main/20220726/react/package.json)
