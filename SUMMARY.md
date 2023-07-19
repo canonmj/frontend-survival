@@ -1,11 +1,12 @@
 # Table of contents
 
-## 주요 그룹 제목
+## 주차별 학습내용
 
-- [week 1 프론트엔드 개발 환경](README.md)
+- [전체 학습 요약](README.md)
 
-  - [Github과 연동하기](integration/integration-with-github.md)
+- [week_1 프론트엔드 개발 환경](week_1/development-environment.md)
 
-- [week 2](README.md)
+  - [타입스크립트](week_1/typescript.md)
+  - [TDD에 대해서](week_1/how-t0-test-code.md)
 
 ## 서브 그룹 제목
