@@ -9,4 +9,4 @@ description:
 - TypeScript + React + Jest + Parcel 환경으로 개발환경 세팅해보기
 ---
 
-# week 1: 프론트엔드 개발 환경
+# week 1 프론트엔드 개발 환경
