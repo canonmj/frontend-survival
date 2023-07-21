@@ -1,109 +1,79 @@
 # TypeScript
 
+프엔코스 시작하면서 “이번기회에 타입스크립트도 제대로 배워봐라” 라는 소리를 들었다.
+이번 강의는 기본 개념 익히는 강의라 코드를 쭉 같이 따라 쳐봤다.
+
+실습환경 REPL을 쓰고 싶으면
+
+```jsx
+npx ts-node
+```
+
 ## 타입 지정
 
-```tsx
+```jsx
 let name: string;
 let age: number;
 
-name = "홍길동";
-age = 13;
+name = "주키";
+age = 2;
 
-name = 13;
-age = "홍길동";
-
-let human: {
-  name: string;
-  age: number;
+let cat: {
+  name: string,
+  age: number,
 };
 
-human = { name: "홍길동", age: 13 };
+cat = { name: "주키", age: 2 };
 ```
 
-복잡한 오브젝트의 타입을 재사용하기 위해 타입을 정의할 수 있다.
-
-```tsx
-type Human = {
-  name: string;
-  age: number;
+```jsx
+type Cat: {
+ name: string;
+ age: number
 };
 
-let boy: Human;
+let munchkin: Cat;
+munchkin = { name: "주키", age: 2};
 
-boy = { name: "홍길동", age: 13 };
+interface Kitty: {
+ name: string;
+ age: number
+};
 
-interface Person {
-  name: string;
-  age: number;
-}
+let siamese: Kitty;
+siamese = { name: "브루키", age: 1};
+```
 
-let girl: Person;
-
-girl = { name: "홍길동", age: 13 };
-
+```jsx
 function add(x: number, y: number): number {
   return x + y;
 }
-
-add(1, 2);
-
-add("Hello", "World");
-
-function sub(x: number, y: number): string {
-  return x - y;
-}
 ```
 
-정해진 값으로 타입을 지정할 수도 있다. 이런 타입은 Union에서 유용하게 쓰인다.
-
-```tsx
-let category: "food";
-
-category = "food";
-```
-
-배열은 타입 뒤에 대괄호를 붙여주면 된다.
-
-```tsx
+```jsx
+// 배열은 타입 뒤에 대괄호를 붙여준다.
 let numbers: number[];
-
 numbers = [1, 2, 3];
+
+// 더 깐깐한 관리는 Tuple
+let sound = [string, number];
+sound = ["미야오", 1107];
 ```
 
-배열보다 깐깐하게 타입을 관리하고 싶다면 Tuple을 쓴다.
+## 타입추론
 
-```tsx
-let anythings: any[];
+간단한 타입의 경우 자동으로 데이터 타입 추론해준다.
 
-anythings = ["hp", 256];
+## Union Type
 
-let pair: [string, number];
+```jsx
+type Bool = true | false;
 
-pair = ["hp", 256];
-```
-
-### [타입 추론](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes.html#%ED%83%80%EC%9E%85-%EC%B6%94%EB%A1%A0-types-by-inference)
-
-```tsx
-const name: string = "홍길동";
-
-const name = "홍길동";
-```
-
-### [Union Type](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes.html#%EC%9C%A0%EB%8B%88%EC%96%B8-unions)
-
-여러 타입 중 하나. 예를 들어 boolean은 true | false라고 볼 수 있다.
-
-```tsx
-type bool = true | false;
-
-let flag: bool;
+let flag: Mool;
 
 flag = true;
 
 flag = false;
-
-flag = 3;
 ```
 
 매개변수를 제한하거나 할 때 매우 유용하게 쓸 수 있다.
