@@ -1,4 +1,6 @@
-# JSX
+# React와 JSX
+
+## JSX
 
 > JSX는 XML 같은 ECMAScript(Javascript 표준)의 문법 확장이다.
 > 브라우저에서 실행하기 전에 코드가 번들링되는 과정에서 바벨을 통해 React.createElement을 쓰는 JavaScript 코드로 변환된다.

@@ -1,4 +1,6 @@
-# VDOM
+# VDOM(Virtual Dom)
+
+## VDOM
 
 > Virtual DOM은 실제 DOM과 같은 내용을 담고 있는 복사본이라 할 수 있다. 복사본은 실제 DOM이 아닌 JS 객체형태로 메모리 안에 저장되어 있다.
 
