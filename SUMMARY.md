@@ -12,5 +12,12 @@
   - [Jest](week_1/jest.md)
 
 - week 2 - JSX
+
   - [React와 JSX](week_2/jsx.md)
   - [VDOM(Virtual Dom)](week_2/vdom.md)
+
+- week 3 - React로 사고하기
+
+  - [REST API와 GraphQL](week_3/rest-api-and-graphql.md)
+  - [React component](week_3/react-component.md)
+  - [React State](week_3/react-state.md)
