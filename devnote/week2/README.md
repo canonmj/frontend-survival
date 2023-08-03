@@ -1,4 +1,8 @@
-# JSX
+---
+description: JSX
+---
+
+# week 2
 
 ## 학습 목표
 

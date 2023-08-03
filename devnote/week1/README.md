@@ -1,4 +1,8 @@
-# 개발환경 설정
+---
+description: 프론트엔드 개발환경 설정
+---
+
+# week 1
 
 ## 학습 목표
 
@@ -6,8 +10,8 @@
 
 ## 목차
 
-개발 환경
-TypeScript
-React
-Testing Library
-Parcel & ESLint
+* 개발 환경
+* TypeScript
+* React
+* Testing Library
+* Parcel & ESLint
