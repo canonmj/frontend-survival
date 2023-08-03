@@ -1,5 +1,19 @@
 # REST(Representational State Transfer)
 
+## JSON
+
+> javascript 객체 표기법을 활용한 data 교환용 표준 포맷. 웹 어플리케이션에서 데이터를 전송할 때 일반적으로 사용합니다(서버에서 클라이언트로 데이터를 전송하여 표현하려거나 반대의 경우).
+> 보낼때는 Stringify 해서 문자열로 만들어 전송에 용이하게 만들어 보낸다. 받은 이후에는 문자열 형태의 데이터를 parsing 해서 사용하기 좋게 JSON 객체 형식으로 > 변환한다.
+> B/E 에서는 데이터를 JSON의 형태로 받아오게 되는데, 데이터를 받기 위한 API로 REST API 방식 혹은 GraphQL이 있다.
+
+[JSON으로 작업하기]('https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/JSON')
+
+## DSL(Domain-Specific Language) - 도메인 특화 언어
+
+> 특정 도메인에 최적화된 언어. React에서 쓰는 DSL에는 JSX(JS XML)가 있다.
+> B/E에서 JSON 데이터를 받아오면 F/E는 이 데이터를 사용자가 볼 수 있도록 UI를 구성하한다.
+> React는 HTML과 유사한 모양의 DSL을 사용함으로써 선언형으로 UI를 구성할 수 있다.
+
 ## REST
 
 > 웹에 존재하는 모든 자원(ex. 이미지, 데이터)에 고유한 URI를 부여하여 자원에 대한 주소를 지정하는 규칙이다.

@@ -64,7 +64,8 @@ React.createElement(
 
 > 화면에 표시할 내용으로, 브라우저 DOM 엘리먼트와 달리 일반 객체다. React DOM은 React Element와 일치하도록 DOM을 최신으로 업데이트한다.
 
-[createElement](../../week\_2/'https:/react.dev/reference/react/createElement'/) [Element](../../week\_2/'https:/ko.legacy.reactjs.org/docs/rendering-elements.html')
+- [createElement]('https:/react.dev/reference/react/createElement')
+- [Element]('https:/ko.legacy.reactjs.org/docs/rendering-elements.html')
 
 ## React StrictMode
 
@@ -83,8 +84,8 @@ root.render(
 );
 ```
 
-* 재 렌더링을 하여 모든 컴포넌트가 항상 동일한 JSX를 반환하는 순수한 함수인지 검사합니다.
-* React 컴포넌트가 마운트될 때(화면에 추가됨) setup을 호출, 구성 요소가 마운트 해제될 때(화면에서 제거됨) cleanup을 호출하는 과정을 한번 더 실행하여 버그를 검사합니다.
-* 더 이상 사용되지 않는 API 사용에 대해 컴포넌트를 확인합니다.
+- 재 렌더링을 하여 모든 컴포넌트가 항상 동일한 JSX를 반환하는 순수한 함수인지 검사합니다.
+- React 컴포넌트가 마운트될 때(화면에 추가됨) setup을 호출, 구성 요소가 마운트 해제될 때(화면에서 제거됨) cleanup을 호출하는 과정을 한번 더 실행하여 버그를 검사합니다.
+- 더 이상 사용되지 않는 API 사용에 대해 컴포넌트를 확인합니다.
 
-[StrictMode](../../week\_2/'https:/react.dev/reference/react/StrictMode/#fixing-bugs-found-by-double-rendering-in-development')
+[StrictMode]('https:/react.dev/reference/react/StrictMode/#fixing-bugs-found-by-double-rendering-in-development')
