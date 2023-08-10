@@ -17,4 +17,4 @@
   - [React component](devnote/week3/react-component.md)
   - [React State](devnote/week3/react-state.md)
 - [week 4](devnote/week3/README.md)
-  - [Express](devnote/week3/Express.md)
+  - [Express](devnote/week3/express.md)
