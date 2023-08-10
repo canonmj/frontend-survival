@@ -23,7 +23,7 @@ Express도 타 프레임워크처럼 웹 애플리케이션을 만들기 위한 
 
 URL은 여러 부분으로 구성되며 일부는 필수, 일부는 선택 사항이다. 가장 중요한 부분은 아래 URL에 강조표시되어 있다.
 
-![스크린샷 2023-08-10 오후 9.01.29.png](url-strucrue.png)
+![url 구조](./url-strucrue.png)
 
 ### Scheme
 
@@ -73,3 +73,6 @@ HTTP 메서드란 클라이언트와 서버 사이에 이루어지는 요청(Req
 - DELETE(DELETE) : 자원을 삭제한다. 근데 이렇게 자원을 요청만 보낸다고 다 지워버리는 것은 비가역적이기에 위험하니 안전성의 문제로 대부분 경우 비활성한다고 한다.
 
 > DB에서의 경우 요청이 삭제일지라도 실제로 삭제를 하지는 않고 db table 상에서 delete flag를 true로 바꾸는 식으로 soft delete를 하여 문제가 생겼을 경우 복구를 하던지 할 수 있다.
+
+[출처](https://ninjaggobugi.tistory.com/9)
+[출처](https://developer.mozilla.org/ko/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL)
