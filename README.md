@@ -20,3 +20,6 @@
 - 컴포넌트는 어떤 기준으로 나눌까?
 
 ## week 4 React Hooks
+
+- React Hook의 등장배경
+- Hook의 종류
