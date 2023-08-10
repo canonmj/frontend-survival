@@ -16,5 +16,5 @@
   - [REST API와 GraphQL](devnote/week3/rest-api-and-graphql.md)
   - [React component](devnote/week3/react-component.md)
   - [React State](devnote/week3/react-state.md)
-- [week 4](devnote/week3/README.md)
-  - [Express](devnote/week3/express.md)
+- [week 4](devnote/week4/README.md)
+  - [Express](devnote/week4/express.md)
