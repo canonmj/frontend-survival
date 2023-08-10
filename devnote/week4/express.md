@@ -23,7 +23,7 @@ Express도 타 프레임워크처럼 웹 애플리케이션을 만들기 위한 
 
 URL은 여러 부분으로 구성되며 일부는 필수, 일부는 선택 사항이다. 가장 중요한 부분은 아래 URL에 강조표시되어 있다.
 
-![url 구조](./url-strucrue.png)
+![url 구조](./url-structure.png)
 
 ### Scheme
 
