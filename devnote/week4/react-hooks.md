@@ -22,6 +22,8 @@ const [text, setText] = useState < string > '';
 
 ### useEffect
 
+[useEffect](https://www.robinwieruch.de/react-hooks-fetch-data/)
+
 렌더링 후에 수행되어야 할 side effect(외부 효과) 에 대해 정의가 필요할 때 `[useEffect](https://ko.legacy.reactjs.org/docs/hooks-effect.html#tip-use-multiple-effects-to-separate-concerns)`를 수행한다.
 
 [추가 문서](https://ko.legacy.reactjs.org/docs/hooks-reference.html#useeffect)
