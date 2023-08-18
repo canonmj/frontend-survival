@@ -4,8 +4,6 @@
 
 [Hooks](https://ko.legacy.reactjs.org/docs/hooks-intro.html)는 클래스 바탕 코드 작성 없이 사용할 수 있는 react의 요소이며 상태, 외부효과 등의 여러 기능을 제공한다. 커스텀 훅을 통해 직접 원하는 훅을 제작해서 사용할 수도 있다.
 
-16.8 버전에서 새롭게 추가되었고, 필요한 곳에만 선택적으로 사용이 가능하다. React 개념에 맞는 직관적인 API를 제공한다.
-
 이전에는 횡단 관심사(Cross-Cutting Concerns : 여러 컴포넌트에서 공통으로 사용되며 중복되고 얽혀있는 관심사) 를 처리하기 위해 [HOC(High Order Component : 고차 컴포넌트)](https://ko.legacy.reactjs.org/docs/higher-order-components.html) 를 씌워서 새 컴포넌트를 만들어서 해결했다. 하지만 이를 위해 컴포넌트를 계속 다시 만들면서 코드 흐름을 따라가기 어렵게 만든다. 이런 문제가 중첩이 되면 HOC, render props, 추상화된 레이어가 겹쳐서 Wrapper Hell을 유발한다. 계층이 깊어져서 생기는 비슷한 지옥(callback Hell)이 Javascript에서도 있었던것 같다. 뭐든 정도껏 해야지 지나치면 일을 그르치게 된다. 어쨌든, HOC의 문제를 해결하기위해 나온 hook은 계층 변화 없이 상태 관련 로직을 재사용할 수 있으며 customize도 가능하다.
 
 ### Hook의 종류(Built in)
@@ -45,6 +43,13 @@ react component가 뭘하던간에 1초 1초가 지나면 갱신되기에 시간
 ### useContext
 
 [useContext](https://react.dev/reference/react/useContext)는 component의 [context](https://react.dev/learn/passing-data-deeply-with-context) 를 읽고 구독하는 hook이다.
+
+**hook의 규칙?**
+
+Hook 호출은 규칙이 있어서 단순하게 쓰도록 노력해야 한다.
+
+1. Function Component 바로 안쪽(함수의 최상위)에서만 호출.
+2. Function Component 또는 Custom Hook에서만 호출.
 
 state를 사용할 때 여러 곳에서 사용하는 경우 lifting state up을 하게 되고, 그 과정에서 state를 책임지는 상위 component와 실제 조작하는 component간의 계층이 멀어지면서 props drilling이 발생하게 된다. props drilling은 사용하지도 않는 component인데 중간에 있다는 것만으로 props를 받고 넘겨주는 현상을 말한다.
 
