@@ -99,6 +99,42 @@ fetch(
   .then((commits) => alert(commits[0].author.login));
 ```
 
+## POST 요청
+
+GET 이외의 요청을 보내려면 추가 옵션을 사용해야 합니다.
+
+method – HTTP 메서드(예: POST)
+body – 요청 본문으로 다음 항목 중 하나이어야 합니다.
+문자열(예: JSON 문자열)
+FormData객체 – form/multipart 형태로 데이터를 전송하기 위해 쓰입니다.
+Blob나 BufferSource – 바이너리 데이터 전송을 위해 쓰입니다.
+URLSearchParams – 데이터를 x-www-form-urlencoded 형태로 보내기 위해 쓰이는데, 요즘엔 잘 사용하지 않습니다.
+대부분은 JSON을 요청 본문에 실어 보내게 됩니다.
+
+user 객체를 본문에 실어 보내는 예시를 살펴봅시다.
+
+```js
+let user = {
+  name: "John",
+  surname: "Smith",
+};
+
+let response = await fetch("/article/fetch/post/user", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json;charset=utf-8",
+  },
+  body: JSON.stringify(user),
+});
+
+let result = await response.json();
+alert(result.message);
+```
+
+POST 요청을 보낼 때 주의할 점은 요청 본문이 문자열일 때 Content-Type 헤더가 text/plain;charset=UTF-8로 기본 설정된다는 점입니다.
+
+하지만 위 예시에선 JSON을 전송하고 있기 때문에 headers에 제대로 된 Content-Type인 application/json을 설정해 주었습니다.
+
 ### Promise
 
 `fetch()` 가 반환하는 [객체](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise)이다. 404, 500등의 오류상태코드를 수신해도 다 받는다. 오직 네트워크 연결이 실패했을 때만 Promise가 거부된다. 응답은 200번대가 아니면 `ok: false` 되는 식으로 처리된다.
