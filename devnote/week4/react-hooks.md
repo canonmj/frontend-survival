@@ -82,6 +82,12 @@ useEffect(() => {
 따라서 useEffect에 빈 배열을 넣는 경우는 처음으로 변수가 생성될 때, 즉 컴포넌트가 최초로 렌더링 되는 마운트 (mount)시에 단 한번 실행될 때를 위해 사용한다.
 이는 클래스 컴포넌트의 라이프사이클 메소드에서 componentDidMount()의 기능과 같다고 할 수 있다.
 
+### fetch 함수를 왜 useEffect 안에 써야하지?
+
+**Fetch 함수의 위치가 고민된다면, Dan Abramov의 글을 다시 보자.**
+
+- [useEffect 완벽가이드 - 함수를 이펙트 안으로 옮기기](https://overreacted.io/ko/a-complete-guide-to-useeffect/#%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%95%88%EC%9C%BC%EB%A1%9C-%EC%98%AE%EA%B8%B0%EA%B8%B0)
+
 ### useContext
 
 [useContext](https://react.dev/reference/react/useContext)는 component의 [context](https://react.dev/learn/passing-data-deeply-with-context) 를 읽고 구독하는 hook이다.
