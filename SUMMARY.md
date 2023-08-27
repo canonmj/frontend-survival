@@ -20,6 +20,7 @@
 
   - [Express](devnote/week4/express.md)
   - [Fetch API & CORS](devnote/week4/fetchapi-and-cors.md)
+  - [React Hooks](devnote/week4/react-hooks.md)
   - [usehooks-ts](devnote/week4/usehooks-ts.md)
 
 - [week 5](devnote/week4/README.md)
