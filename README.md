@@ -23,3 +23,7 @@
 
 - React Hook의 등장배경
 - Hook의 종류
+- Fetch API
+- usehooks-ts
+
+## week 5 테스트
