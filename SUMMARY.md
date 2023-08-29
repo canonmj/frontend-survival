@@ -22,5 +22,6 @@
   - [React Hooks](devnote/week4/react-hooks.md)
   - [usehooks-ts](devnote/week4/usehooks-ts.md)
 - [week 5](devnote/week5/README.md)
+  - [TDD](devnote/week5/tdd.md)
 - [week 6](devnote/week6/README.md)
   - [External Store](devnote/week6/external-store.md)
