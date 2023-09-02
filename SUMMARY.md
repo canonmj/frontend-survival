@@ -25,3 +25,4 @@
   - [TDD](devnote/week5/tdd.md)
 - [week 6](devnote/week6/README.md)
   - [External Store](devnote/week6/external-store.md)
+- [week 7](devnote/week7/README.md) -[Routing](devnote/week7/routing.md)
