@@ -29,3 +29,4 @@
   - [Routing](devnote/week7/routing.md)
   - [Routes](devnote/week7/routes.md)
   - [Router](devnote/week7/router.md)
+  - [Navigation](devnote/week7/navigation.md)
