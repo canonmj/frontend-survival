@@ -2,7 +2,7 @@
 
 - [🐋 megaptera-front](README.md)
 
-## 학습 내용 <a href="#devnote" id="devnote"></a>
+## 학습 내용
 
 - [week 1](devnote/week1/README.md)
   - [개발환경 설정, 어떻게 하지?](devnote/week1/dev-env-setting.md)
@@ -25,4 +25,7 @@
   - [TDD](devnote/week5/tdd.md)
 - [week 6](devnote/week6/README.md)
   - [External Store](devnote/week6/external-store.md)
-- [week 7](devnote/week7/README.md) -[Routing](devnote/week7/routing.md)
+- [week 7](devnote/week7/README.md)
+  - [Routing](devnote/week7/routing.md)
+  - [Routes](devnote/week7/routes.md)
+  - [Router](devnote/week7/router.md)
