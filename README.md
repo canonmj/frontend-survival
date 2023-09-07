@@ -36,4 +36,5 @@
 
 ## week 8 CSS-in-JS
 
-- Design System 
+- Design System
+- styled component
