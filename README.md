@@ -28,6 +28,9 @@
 
 ## week 5 테스트
 
+- TDD
+- React Testing Library
+
 ## week 7 Router
 
 - routing
