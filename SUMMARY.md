@@ -30,3 +30,7 @@
   - [Routes](devnote/week7/routes.md)
   - [Router](devnote/week7/router.md)
   - [Navigation](devnote/week7/navigation.md)
+- [week 8](devnote/week8/README.md)
+- [CSS in JS](devnote/week8/css-in-js.md)
+- [Styled Components](devnote/week8/styled-components.md)
+- [props & attr](devnote/week8/props-and-attrs.md)
