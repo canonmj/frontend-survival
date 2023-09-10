@@ -41,3 +41,4 @@
 
 - Design System
 - styled component
+- props and attrs
