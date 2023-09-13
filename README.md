@@ -43,4 +43,4 @@
 - styled component
 - props and attrs
 
-## week 9
+## week 9 온라인 쇼핑몰 1
